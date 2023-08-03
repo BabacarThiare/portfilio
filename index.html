@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <h2 class="logo">Port<span>folio</span></h2>
+            <ul>
+                <li><a href="#accueil" class="active">ACCUEIL</a></li>
+                <li><a href="#apropos">A PROPOS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <a href="#" class="btn">S'abonner</a>
+        </nav>
+        <div class="content">
+            <h4>Bonjour,je m'appelle</h4>
+            <h1>Babacar <span> Thiare</span></h1>
+            <h3>Je suis un Developpeur Web</h3>
+        </div>
+    </div>
+    <!---section Apropos-->
+    <section class="apropos">
+      <div class="main">
+        <img src="image/babs.JPG">
+        <div class="apropos-text">
+            <h2>Apropos</h2>
+            <h5>Developpeur web front-end</h5>
+            <p>Jeune développeur web issu de la formation passerelle numérique à GOMYCODE, je maîtrise les technologies front-end, notamment Html, Css, et JavaScript avec les frameworks Bootstrap ,
+            j’ai des connaissances en méthode agile ainsi que l’outil Git pour la gestion de version de projet
+            Je suis à l'écoute d'opportunités en développement de site,je rends également le site de plus en plus interactif avec des animations web.
+            Je suis particulièrement intéressé par le développement en langage JavaScript et ses frameworks</p>
+            <br>
+            <button type="button">Plus d'info</button>
+        </div>
+        
+      </div>
+
+    </section>
+    <!--section service-->
+    <div class="service">
+        <div class="titre">
+            <h2><span>Mes</span> Services </h2>
+        </div>
+        
+        <div class="box">
+         <div class="card">
+           <i class="fas fa-bars"></i>
+           <h5>Developpement Web</h5>
+           <div class="pra">
+            <p>Chaque site Web doit être construit avec deux objectifs principaux 
+              :premièrement, il doit fonctionner sur tous les appareils. deuxièmement,
+              il doit être aussi rapide que possible.
+            </p>
+            <p style="text-align: center;">
+                <a class="button" href="#">En savoir plus</a>
+            </p>
+           </div>
+        </div>
+         <div class="card">
+            <i class="far fa-user"></i>
+            <h5>Missions</h5>
+            <div class="pra">
+             <p>Garantir une bonne organisation et une navigation optimale du site web;
+                Mener le developpement et l'integration des maquettes via des langages de developpement.
+        
+             </p>
+             <p style="text-align: center;">
+                 <a class="button" href="#">En savoir plus</a>
+             </p>
+            </div>
+        </div>
+        <div class="card">
+            <i class="fa-regular fa-bell"></i>
+            <h5>Qualité</h5>
+            <div class="pra">
+             <p>Bonne communication et Capacite de travail en equipe; Rigueur Creativite et Curiosite
+             </p>
+             <p style="text-align: center;">
+                 <a class="button" href="#">En savoir plus</a>
+             </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!---section contact-->
+    <section>
+    <h1 class="contact" >Contactez-moi</h1>
+    <form action="envoyer_formulaire.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+
+    </section>
+    <!--section footer-->
+    <footer>
+        <p>Tous droits réservés &copy; 2023 Babacar Thiare</p>
+    </footer>
+        
+    <script src="type.js"></script>
+</body>
+</html>
